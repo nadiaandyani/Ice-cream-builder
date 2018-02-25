@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+/* =========================
+    Base Styles
+========================= */
+
+body {
+  background-color: #a3d5d3;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+p {
+    color: #fff;
+    font-family: monospace;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+/* =========================
+    Page container Styles
+========================= */
+.container {
+    display: flex;
+    width: 50%;
+    padding: 100px 100px;
+    margin: auto;
+    align-items: center;
+    flex-direction: column;
+}
+
+.preview {
+    position: relative;
+    width: 200px;
+    height: 250px;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+}
+
+/* =========================
+    Page components Styles
+========================= */
+
+#title {  
+  color: #fff;
+  font-family: monospace;
+  text-align: center;
+  font-weight: bold;
+}
+
+.btn{
+    color: #fff;
+    font-family: monospace;
+    padding: 20px 50px;
+    border-radius: 20%;
+    border: 0;
+}
+
+.start {
+    background-color: #2e809b;
+}
+
+.btn {
+    background-color: #f265a4;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.next {
+    background-color: #fff67a;
+    margin-top: 10px;
+}
+
+.complete {
+    background-color: #7df442;
+    margin-top: 10px;
+}
+
+.preview,
+.ctnr,
+.flavor,
+.topping,
+.sauce,
+.next,
+.complete,
+.complete-msg {
+    display: none;
+}
+
+.ctnr-img {
+    position: absolute;
+    bottom: 10px;
+    left: 35px;
+    max-height: 150px;
+    max-width: 150px;
+}
+
+.scoop-img,
+.sauce-img,
+.topping-img {
+    max-height: 150px;
+    max-width: 150px;
+}
+
+.on-cone {
+    position: absolute;
+    top: 10px;
+    left: 25px;
+}
+
+.on-cup {
+    position: absolute;
+    bottom: 85px;
+    left: 35px;
+}
+
+.sauce-cup {
+    position: absolute;
+    bottom: 104px;
+    left: 35px;
+}
+
+.topping-cup {
+    position: absolute;
+    bottom: 128px;
+    left: 43px;
+    max-width: 130px;
+}
+
+.sauce-cone {
+    position: absolute;
+    top: 8px;
+    left: 25px;
+}
+
+.topping-cone {
+    position: absolute;
+    top: 10px;
+    left: 32px;
+    max-width: 130px;
+}
+
+
+/* =========================
+    Effects
+========================= */
+
+.hovered {
+    transform: scale(1.2);
+    font-weight: bold;
+}
